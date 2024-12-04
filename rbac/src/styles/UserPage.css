@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e8f0);
+  margin: 0;
+  color: #333;
+}
+
+.user-page-container {
+  padding: 20px;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #34a0a4;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2c5364;
+}
+
+.user-main {
+  display: grid;
+  gap: 30px;
+}
+
+.performance-section,
+.activity-section,
+.notifications-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 20px;
+  color: #2c5364;
+  margin-bottom: 15px;
+}
+
+.performance-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #12232e;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #34a0a4;
+  font-weight: bold;
+}
+
+.activity-section ul,
+.notifications-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-section li,
+.notifications-section li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.activity-section li:last-child,
+.notifications-section li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .performance-cards {
+    flex-direction: column;
+  }
+}
